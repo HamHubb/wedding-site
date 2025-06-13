@@ -42,7 +42,7 @@ const Body = () => {
               Welcome to our wedding website where you can learn more details.  
             </p>
             <p>
-              This site may seem scares as there's more to come but trust me, you've found love.
+              This site may seem scarce as there's more to come but trust me, you've found love.
             </p>
             <p>
               Just look into that horizon and see how far it goes. 
