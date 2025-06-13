@@ -212,8 +212,7 @@
     line-height: 1.6; 
     position: relative;
     overflow: hidden;
-    font-family: 'Book Antiqua','Pinyon Script'
-    ;
+    font-family: 'Book Antiqua','libre baskerville';
   }
   
   .faq-section h1,
