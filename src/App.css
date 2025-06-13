@@ -30,7 +30,7 @@ header a {
 
 .header-title {
   position: absolute;
-  bottom: 20%;
+  bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
   color: black;
