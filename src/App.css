@@ -30,7 +30,7 @@ header a {
 
 .header-title {
   position: absolute;
-  bottom: 5%;
+  bottom: 20%;
   left: 50%;
   transform: translateX(-50%);
   color: black;
@@ -62,6 +62,13 @@ svg,
 [style*="background-image"] {
   filter: invert(100%) hue-rotate(180deg) !important;
 } 
+/* Fix display of .header-title @media mobile display */
+@media (max-width: 768px) {
+  .header-title {
+    top:20%;
+  }
+}
+
 
 /* Fix for elements that should remain dark */
 /* [data-darkreader-inline-bgcolor] {
