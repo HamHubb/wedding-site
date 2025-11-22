@@ -65,8 +65,9 @@ function App() {
           <Navbar/>
           <Routes>
             <Route path="/" element={<Body />} />
-            {/* <Route path="/story" element={<Body />} /> */}
+            <Route path="/story" element={<Body />} />
             <Route path="/gallery" element={<Body />} />
+            <Route path="/accommodations" element={<Body />} />
             <Route path="/faq" element={<Body />} />
            
           </Routes>

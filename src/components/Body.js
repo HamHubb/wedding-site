@@ -17,6 +17,10 @@ const Body = () => {
   // creates const that allows for event
   const [selectedImage, setSelectedImage] = useState(null);
   
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState(false);
+
   const enlargeImage = (imgUrl, altText) => {
     setSelectedImage({ imgUrl, altText });
   };
@@ -24,7 +28,28 @@ const Body = () => {
   const closeModal = () => {
     setSelectedImage(null);
   };
-    const location = useLocation();
+
+  const handlePasswordSubmit = (e) => {
+    e.preventDefault();
+    if (password === "ParaSiempre") {
+      setIsAuthenticated(true);
+      setError(false);
+    } else {
+      setError(true);
+      setPassword("");
+    }
+  };
+
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+    if (error) setError(false);
+  };
+
+
+
+  const location = useLocation();
+
+
 
 
 //set up backend: useState for RSVP
@@ -42,12 +67,31 @@ const Body = () => {
               Welcome to our wedding website where you can learn more details.  
             </p>
             <p>
-              Be sure to check back later as there's more information to come. 
+              We've added a reservations page under "Accommodations." 
             </p>
            
           </div>
         </section>
       )}
+          {location.pathname === '/story' && (
+      <section className="story-section">
+        <h2>Two star-crossed lovers</h2>
+        <div className="story-content">
+          <p>One doesn't usually imagine a love story to begin in the halls of a high school and 
+            thankfully that's not where this one began. It is, however, where the two unlikely lovebirds did first meet. 
+            One of them longing to meet the other. As creepy as that sounds, there is a less obsessive explanation.</p>
+          <p>Hairo meets Emily's bestfriend and hears about her for about a year. 
+            Eventually he's made aware that Emily will be transfering to the same school. Excited
+            to give the best first impression, Hairo yells Emily's name from down the hall without an introduction.</p>
+          <p>Let's put ourselves into the mind and perspective of a teenage Emily. To suddenly hear our name be yelled at us by a nameless boy. 
+            Beaming at us with an unhealthy level of eagerness. 
+            It doesn't stop there, Hairo follows it up with, "heard a lot about you" still without introducting himself or giving any explanation </p>
+          <p>Until Emily's face does all the talking. Uncomfortable would be an understatement in describing our first interaction. 
+            Luckily, when we start low the only way is up! Hairo had plenty more opportunities to redeem his no-so meet cute.</p>
+          <p></p>
+        </div>
+      </section>
+    )}
             {/* {location.pathname === '/story' && (
                 <section className="story-section" id="story">
                     
@@ -109,6 +153,73 @@ const Body = () => {
       </div>
     )}
   </>
+)}
+
+{location.pathname === '/accommodations' && (
+  <section className="accommodations-section">
+    <h2>Hotel Accommodations</h2>
+    
+    {!isAuthenticated ? (
+      // Password form - shown when not authenticated
+      <div className="password-protection">
+        <p>Please enter the password from your invitation to access the reservation links:</p>
+        <form onSubmit={handlePasswordSubmit} className="password-form">
+          <input
+            type="password"
+            value={password}
+            onChange={handlePasswordChange}
+            placeholder="Enter password"
+            className={error ? "password-input error" : "password-input"}
+          />
+          <button type="submit" className="password-submit">
+            Unlock Reservations
+          </button>
+        </form>
+        {error && (
+          <p className="error-message">Incorrect password. Please try again.</p>
+        )}
+      </div>
+    ) : (
+      <div className="accommodations-content">
+        <p>Thank you! Below you will find the reservation links for our hotel blocks:</p>
+        
+        <div className="accommodations-grid">
+          <div className="accommodation-column">
+            <h3>Westlake Village Inn</h3>
+            <p>Limited on-site accommodations are offered at our wedding venue with special rates for guests. </p>
+            <p>Starting Rate: $320 per night</p>
+            <a
+              className="accommodations-link"
+              href="https://reservations.travelclick.com/6531?groupID=4856184"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Book at Westlake Village Inn
+            </a>
+          </div>
+          <div className="accommodation-column">
+            <h3>Courtyard by Marriott Agoura Hills</h3>
+            <p>Alternative accommodations a few minutes from our venue. </p> 
+            <p>Starting Rate: $189 per night</p>
+            <a
+              className="accommodations-link"
+              href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1761068764929&key=GRP&app=resvlink&dtt=true&_branch_match_id=1479103530153609079&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXTywo0MtNLCrKzC8p0UvOz9UvSi3OyczLtgdK2ALZZSCOWkpJiW1JUWmqWmaKraG5maGBmYW5mYmlkaVadmqlrXtQgFpdUWpaKtCYvPT4pKL88uLUIlvnjKL83FQAV1GjX2kAAAA%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Book at Marriott Hotel
+            </a>
+          </div> 
+        </div>
+        
+        <p className="logout-note">
+          <small>
+            (The reservation links will remain accessible on this device until you close the browser)
+          </small>
+        </p>
+      </div>
+    )}
+  </section>
 )}
       
       {location.pathname === '/faq' && (
