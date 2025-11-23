@@ -242,7 +242,7 @@ const Body = () => {
             <h2>Q: Are children allowed?</h2>
             <h3>A: While we adore your little ones, we've chosen to keep our celebration adults-only. Thank you for your understanding!</h3>
             <h2>Q: Where will the wedding be?</h2>
-            <h3>A: Our ceremony and reception will be at the Westlake Village Inn. The ceremony will be held at the Inn's Tuscan Garden at 5:00pm, followed by a reception at the Wine Cellar.  
+            <h3>A: Our ceremony and reception will be at the Westlake Village Inn. The ceremony will be held at the Inn's Tuscan Garden at 5:00pm, followed by a reception at the Fairway Room.  
             </h3>
             <a
                 className="address"
