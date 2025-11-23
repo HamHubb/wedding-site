@@ -64,10 +64,10 @@ const Body = () => {
               We're excited to annouce that we're getting married on Saturday, April 25, 2026.
             </p>
             <p>
-              Welcome to our wedding website where you can learn more details.  
+               We've added a reservations page under "Accommodations." 
             </p>
             <p>
-              We've added a reservations page under "Accommodations." 
+               Last day to reserve is 3/25/26.
             </p>
            
           </div>
