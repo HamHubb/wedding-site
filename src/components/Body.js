@@ -67,7 +67,7 @@ const Body = () => {
                We've added a reservations page under "Accommodations." 
             </p>
             <p>
-               Last day to reserve is 3/25/26.
+               Last day to reserve is March 25, 2026.
             </p>
            
           </div>
@@ -229,20 +229,20 @@ const Body = () => {
             <h1>Questions & Answers</h1>
             {/* <h2>Q: How do I RSVP for the wedding?</h2>
             <h3>A: Please RSVP by (date) through the RSVP form on our website. We ask that you kindly respond as soon as possible so we can finalize our headcount!</h3> */}
-            <h2>Q: What is the dress code?</h2>
-            <h3>A: Dress to impress! Our wedding is formal, so please wear your best outfit.<br></br> 
-            We're encouraging our guests to wear pastel colors.</h3>
-            <h2>Q: Can I bring a plus one?</h2>
-            <h3>A: In an effort to keep our wedding as intimate as possible, only the guests formally invited on your wedding invitation will be accomodated. 
+            <h2> What is the dress code?</h2>
+            <h3> Welcome Party: Dressy Casual - We recommend bringing a jacket to this evening event as it will be partially outdoors.</h3>
+            <h3>Wedding Day: Spring Formal - Full length or cocktail dresses in spring colors for women and classic suits or tailored separates for men.</h3>
+            <h2> Can I bring a plus one?</h2>
+            <h3> In an effort to keep our wedding as intimate as possible, only the guests formally invited on your wedding invitation will be accomodated. 
               If you received a plus one they will appear when you RSVP.</h3>
-            <h2>Q: What if I don't RSVP on time?</h2>
-            <h3>A: If we do not receive your RSVP by the date provided, it will automatically be marked as a "no."
+            <h2> What if I don't RSVP on time?</h2>
+            <h3> If we do not receive your RSVP by the date provided, it will automatically be marked as a "no."
               We will miss celebrating with you but it is important we provide our vendors with final guest count within the time frame they have given us. 
             </h3>
-            <h2>Q: Are children allowed?</h2>
-            <h3>A: While we adore your little ones, we've chosen to keep our celebration adults-only. Thank you for your understanding!</h3>
-            <h2>Q: Where will the wedding be?</h2>
-            <h3>A: Our ceremony and reception will be at the Westlake Village Inn. The ceremony will be held at the Inn's Tuscan Garden at 5:00pm, followed by a reception at the Fairway Room.  
+            <h2> Are children allowed?</h2>
+            <h3> While we adore your little ones, we've chosen to keep our celebration adults-only. Thank you for your understanding!</h3>
+            <h2> Where will the wedding be?</h2>
+            <h3> Our ceremony and reception will be at the Westlake Village Inn. The ceremony will be held at the Inn's Tuscan Garden at 4:30pm, followed by a reception at the Fairway Room.  
             </h3>
             <a
                 className="address"
