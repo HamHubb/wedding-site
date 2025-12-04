@@ -232,20 +232,20 @@ const Body = () => {
             <h2> What is the dress code?</h2>
             <h3> Welcome Party: Dressy Casual - We recommend bringing a jacket to this evening event as it will be partially outdoors.</h3>
              <div className="dressAtireImage">
-              <img src="https://i.imgur.com/F7H47ld.jpeg" 
+              <img src="https://i.imgur.com/YNK4WWE.jpeg" 
               alt="Attire inspiration example"
-              width="500"
-              height="200"></img>
+              width="800"
+              height="300"></img>
             </div>
              
             {/* https://i.imgur.com/F7H47ld.jpeg */}
             {/* https://i.imgur.com/YNK4WWE.jpeg */}
             <h3>Wedding Day: Spring Formal - Full length or cocktail dresses in spring colors for women and classic suits or tailored separates for men.</h3>
             <div className="dressAtireImage">
-              <img src="https://i.imgur.com/YNK4WWE.jpeg" 
+              <img src="https://i.imgur.com/F7H47ld.jpeg" 
               alt="Attire inspiration example"
-              width="500"
-              height="200"></img></div>
+              width="800"
+              height="300"></img></div>
             <h2> Can I bring a plus one?</h2>
             <h3> In an effort to keep our wedding as intimate as possible, only the guests formally invited on your wedding invitation will be accomodated. 
               If you received a plus one they will appear when you RSVP.</h3>
