@@ -231,7 +231,21 @@ const Body = () => {
             <h3>A: Please RSVP by (date) through the RSVP form on our website. We ask that you kindly respond as soon as possible so we can finalize our headcount!</h3> */}
             <h2> What is the dress code?</h2>
             <h3> Welcome Party: Dressy Casual - We recommend bringing a jacket to this evening event as it will be partially outdoors.</h3>
+             <div className="dressAtireImage">
+              <img src="https://i.imgur.com/F7H47ld.jpeg" 
+              alt="Attire inspiration example"
+              width="500"
+              height="200"></img>
+            </div>
+             
+            {/* https://i.imgur.com/F7H47ld.jpeg */}
+            {/* https://i.imgur.com/YNK4WWE.jpeg */}
             <h3>Wedding Day: Spring Formal - Full length or cocktail dresses in spring colors for women and classic suits or tailored separates for men.</h3>
+            <div className="dressAtireImage">
+              <img src="https://i.imgur.com/YNK4WWE.jpeg" 
+              alt="Attire inspiration example"
+              width="500"
+              height="200"></img></div>
             <h2> Can I bring a plus one?</h2>
             <h3> In an effort to keep our wedding as intimate as possible, only the guests formally invited on your wedding invitation will be accomodated. 
               If you received a plus one they will appear when you RSVP.</h3>
@@ -258,9 +272,6 @@ const Body = () => {
             </p>
             <div className="map-container">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3740.4415625446145!2d-118.81779308827188!3d34.14872047300877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e82400adde2e2b%3A0x78672c8f8e8cc18b!2sWestlake%20Village%20Inn!5e1!3m2!1sen!2sus!4v1744655150186!5m2!1sen!2sus" 
-              // width="600" 
-              // height="450" 
-              // style={{ border: 0 }}
               title="Google Maps location of Westlake Village Inn" 
               allowFullScreen="" 
               loading="lazy" 

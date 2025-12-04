@@ -275,6 +275,15 @@
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
       }
     }
+
+    .dressAtireImage {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+
   @media (max-width: 480px) {
     .gallery-grid {
       grid-template-columns: 1fr;
