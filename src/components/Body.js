@@ -222,22 +222,16 @@ const Body = () => {
   </section>
 )}
 
-{location.pathname === '/registry' && (
-      <section className="registry-section">
-        <h1>Welcome and thank you!</h1>
-        {/* <h2></h2> */}
-        <div className="registry-content">
+{/* {location.pathname === '/registry' && (    
           <a
               className="registry-link"
               href="https://www.zola.com/wedding/emilyandhairo/registry"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Zola Registry!
-            </a>
-        </div>
-      </section>
-    )}
+              Registry
+            </a>       
+    )} */}
       
       {location.pathname === '/faq' && (
         <section className="faq-section">

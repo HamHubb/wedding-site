@@ -14,8 +14,12 @@ const Navbar = ({ weddingCouple = { partner1: "Emily", partner2: "Hairo" } }) =>
       { label: "Our Story", path: "/story" },
       { label: "Gallery", path: "/gallery" },
       { label:"Accommodations", path: "/accommodations"},
-      { label: "Registry", path: "/registry" },
-      {label: "FAQ", path: "/faq"}
+      { 
+        label: "Registry", 
+        path: "https://www.zola.com/wedding/emilyandhairo/registry", 
+        external: true 
+      },
+      { label: "FAQ", path: "/faq"}
     ]
 
 
@@ -44,7 +48,7 @@ const Navbar = ({ weddingCouple = { partner1: "Emily", partner2: "Hairo" } }) =>
         aria-label="Toggle menu"
         aria-expanded={isOpen}
       >
-        {[...Array(4)].map((_, index) => (
+        {[...Array(5)].map((_, index) => (
             <span key={index} aria-hidden="true"></span>
           ))}
       </button>
