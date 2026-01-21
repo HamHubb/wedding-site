@@ -18,6 +18,12 @@
                 url('https://i.imgur.com/w2jESqb.jpeg') center/cover fixed;
 }  
 
+.page-body.registry-route {
+  background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
+                url('https://i.imgur.com/k4IZcnr.jpeg') center/cover fixed;
+}  
+
+
 .page-body.faq-route {
     background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
                 url('https://i.imgur.com/fuZN7fS.jpeg') center/cover fixed;
@@ -230,6 +236,13 @@
   font-family: 'Pinyon Script', cursive;
   margin-bottom: 1.5rem;
   color: #000;
+}
+
+.registry-section {
+  text-align: center;
+  padding: 4rem;
+  min-height: 50vh;
+  font-family: 'Book Antiqua';
 }
 
   .faq-section {

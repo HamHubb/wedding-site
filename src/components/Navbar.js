@@ -13,8 +13,8 @@ const Navbar = ({ weddingCouple = { partner1: "Emily", partner2: "Hairo" } }) =>
       { label: "Home", path: "/"},
       { label: "Our Story", path: "/story" },
       { label: "Gallery", path: "/gallery" },
-      // { label: "RSVP", path: "/rsvp", isCta: true },
       { label:"Accommodations", path: "/accommodations"},
+      { label: "Registry", path: "/registry" },
       {label: "FAQ", path: "/faq"}
     ]
 

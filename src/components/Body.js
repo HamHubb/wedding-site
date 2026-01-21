@@ -81,7 +81,7 @@ const Body = () => {
             thankfully that's not where this one began. It is, however, where the two unlikely lovebirds did first meet. 
             One of them longing to meet the other. As creepy as that sounds, there is a less obsessive explanation.</p>
           <p>Hairo meets Emily's bestfriend and hears about her for about a year. 
-            Eventually he's made aware that Emily will be transfering to the same school. Excited
+            Eventually he's made aware that Emily would be transfering to the same school. Excited
             to give the best first impression, Hairo yells Emily's name from down the hall without an introduction.</p>
           <p>Let's put ourselves into the mind and perspective of a teenage Emily. To suddenly hear our name be yelled at us by a nameless boy. 
             Beaming at us with an unhealthy level of eagerness. 
@@ -221,6 +221,23 @@ const Body = () => {
     )}
   </section>
 )}
+
+{location.pathname === '/registry' && (
+      <section className="registry-section">
+        <h1>Welcome and thank you!</h1>
+        {/* <h2></h2> */}
+        <div className="registry-content">
+          <a
+              className="registry-link"
+              href="https://www.zola.com/wedding/emilyandhairo/registry"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Zola Registry!
+            </a>
+        </div>
+      </section>
+    )}
       
       {location.pathname === '/faq' && (
         <section className="faq-section">

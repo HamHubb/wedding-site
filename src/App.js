@@ -68,6 +68,7 @@ function App() {
             <Route path="/story" element={<Body />} />
             <Route path="/gallery" element={<Body />} />
             <Route path="/accommodations" element={<Body />} />
+            <Route path="/registry" element={<Body />} />
             <Route path="/faq" element={<Body />} />
            
           </Routes>
