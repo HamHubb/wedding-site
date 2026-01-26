@@ -87,7 +87,7 @@ const Body = () => {
             Beaming at us with an unhealthy level of eagerness. 
             It doesn't stop there, Hairo follows it up with, "heard a lot about you" still without introducting himself or giving any explanation </p>
           <p>Until Emily's face does all the talking. Uncomfortable would be an understatement in describing our first interaction. 
-            Luckily, when we start low the only way is up! Hairo had plenty more opportunities to redeem his no-so meet cute.</p>
+            Luckily, when we start low the only way is up! Hairo had plenty more opportunities to redeem his not-so meet cute.</p>
           <p></p>
         </div>
       </section>
