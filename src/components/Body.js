@@ -64,10 +64,10 @@ const Body = () => {
               We're excited to annouce that we're getting married on Saturday, April 25, 2026.
             </p>
             <p>
-               We've added a reservations page under "Accommodations." 
+               We've added a reservations page under "Accommodations."  
             </p>
             <p>
-               Last day to reserve is March 25, 2026.
+              Please RSVP by March 20, 2026. 
             </p>
            
           </div>
@@ -78,17 +78,19 @@ const Body = () => {
         <h2>Two star-crossed lovers</h2>
         <div className="story-content">
           <p>One doesn't usually imagine a love story to begin in the halls of a high school and 
-            thankfully that's not where this one began. It is, however, where the two unlikely lovebirds did first meet. 
+            thankfully that's not where this one began. It is, however, where these two unlikely lovebirds did first meet. 
             One of them longing to meet the other. As creepy as that sounds, there is a less obsessive explanation.</p>
           <p>Hairo meets Emily's bestfriend and hears about her for about a year. 
             Eventually he's made aware that Emily would be transfering to the same school. Excited
             to give the best first impression, Hairo yells Emily's name from down the hall without an introduction.</p>
           <p>Let's put ourselves into the mind and perspective of a teenage Emily. To suddenly hear our name be yelled at us by a nameless boy. 
             Beaming at us with an unhealthy level of eagerness. 
-            It doesn't stop there, Hairo follows it up with, "heard a lot about you" still without introducting himself or giving any explanation </p>
-          <p>Until Emily's face does all the talking. Uncomfortable would be an understatement in describing our first interaction. 
+            It doesn't stop there, Hairo follows it up with, "heard a lot about you" still without introducting himself or giving any explanation. </p>
+          <p>Until Emily's face does all the talking. Uncomfortable would be an understatement in describing their first interaction. 
             Luckily, when we start low the only way is up! Hairo had plenty more opportunities to redeem his not-so meet cute.</p>
-          <p></p>
+          {/* <p>Their love grew during dates to arcade bars where their competative side would first show with their shared love of Galaga. 
+            Emily would 
+          </p> */}
         </div>
       </section>
     )}
@@ -162,6 +164,7 @@ const Body = () => {
     {!isAuthenticated ? (
       // Password form - shown when not authenticated
       <div className="password-protection">
+        <p>Last day to reserve a room is March 25, 2026.</p>
         <p>Please enter the password from your invitation to access the reservation links:</p>
         <form onSubmit={handlePasswordSubmit} className="password-form">
           <input
@@ -239,23 +242,24 @@ const Body = () => {
           <div className="faq-content">
             <h1>Questions & Answers</h1>
             {/* <h2>Q: How do I RSVP for the wedding?</h2>
-            <h3>A: Please RSVP by (date) through the RSVP form on our website. We ask that you kindly respond as soon as possible so we can finalize our headcount!</h3> */}
+            <h3>A: Please RSVP by March 20, 2025 through the RSVP form on our website. We ask that you kindly respond as soon as possible so we can finalize our headcount!</h3> */}
             <h2> What is the dress code?</h2>
-            <h3> Welcome Party: Dressy Casual - We recommend bringing a jacket to this evening event as it will be partially outdoors.</h3>
+            <h3> Welcome Party: Cocktail Casual - Dress as you would for night out on the town. Dresses, skirts, jumpsuits, slacks or dark jeans. We recommend bringing a jacket to this evening event as it will be partially outdoors.</h3>
              <div className="dressAtireImage">
               <img src="https://i.imgur.com/hvH7dFa.jpeg" 
               alt="Attire inspiration example"
-              width="400"
+              width="300"
               height="300"></img>
             </div>
              
             {/* https://i.imgur.com/F7H47ld.jpeg */}
             {/* https://i.imgur.com/YNK4WWE.jpeg */}
-            <h3>Wedding Day: Spring Formal - Full length or cocktail dresses in spring colors for women and classic suits or tailored separates for men.</h3>
+            <h3>Wedding Day: Spring Formal - Tuxes and gowns are welcome, and so are suits, tailored separates, and cocktail dresses. Pastel colors are encouraged but optional.
+            </h3>
             <div className="dressAtireImage">
               <img src="https://i.imgur.com/FdeAuhl.jpeg" 
               alt="Attire inspiration example"
-              width="400"
+              width="300"
               height="300"
               ></img></div>
             <h2> Can I bring a plus one?</h2>

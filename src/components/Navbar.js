@@ -10,9 +10,14 @@ const Navbar = ({ weddingCouple = { partner1: "Emily", partner2: "Hairo" } }) =>
     };
 
     const navItems = [
-      { label: "Home", path: "/"},
+      // { label: "Home", path: "/"},
       { label: "Our Story", path: "/story" },
       { label: "Gallery", path: "/gallery" },
+      { 
+        label: "RSVP", 
+        path: "https://www.zola.com/wedding/emilyandhairo/rsvp", 
+        external: true 
+      },
       { label:"Accommodations", path: "/accommodations"},
       { 
         label: "Registry", 
