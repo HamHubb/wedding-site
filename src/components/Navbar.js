@@ -10,7 +10,7 @@ const Navbar = ({ weddingCouple = { partner1: "Emily", partner2: "Hairo" } }) =>
     };
 
     const navItems = [
-      // { label: "Home", path: "/"},
+      { label: "Home", path: "/"},
       { label: "Our Story", path: "/story" },
       { label: "Gallery", path: "/gallery" },
       { 
@@ -53,7 +53,7 @@ const Navbar = ({ weddingCouple = { partner1: "Emily", partner2: "Hairo" } }) =>
         aria-label="Toggle menu"
         aria-expanded={isOpen}
       >
-        {[...Array(5)].map((_, index) => (
+        {[...Array(6)].map((_, index) => (
             <span key={index} aria-hidden="true"></span>
           ))}
       </button>

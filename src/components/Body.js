@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 // import Navbar from "./Navbar";
 // import RSVPForm from "./RSVPForm";
 import "./Body.css"
@@ -16,10 +16,22 @@ const getRouteClass = (pathname) => {
 const Body = () => {
   // creates const that allows for event
   const [selectedImage, setSelectedImage] = useState(null);
-  
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [password, setPassword] = useState("");
   const [error, setError] = useState(false);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      setTimeout(() => {
+        const e = document.getElementById(location.hash.substring(1));
+        if (e) {
+          e.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  }, [location.pathname, location.hash]);
 
   const enlargeImage = (imgUrl, altText) => {
     setSelectedImage({ imgUrl, altText });
@@ -47,7 +59,7 @@ const Body = () => {
 
 
 
-  const location = useLocation();
+  // const location = useLocation();
 
 
 
@@ -60,15 +72,41 @@ const Body = () => {
         <section className="home-section" id="home">
           <h2>You're invited!</h2>
           <div className="home-grid">
+
             <p>
-              We're excited to annouce that we're getting married on Saturday, April 25, 2026.
+              We're excited to annouce that we're getting married on <br></br>Saturday, April 25, 2026 at the Westlake Village Inn.
             </p>
+            <a href="/faq#map-section">
+              <button type="button" className="Directional-button">
+                  Directions to Wedding Venue
+              </button>
+            </a>
             <p>
                We've added a reservations page under "Accommodations."  
             </p>
             <p>
               Please RSVP by March 20, 2026. 
             </p>
+          <h2>Details</h2>
+
+
+            <p>
+              If you're in town for the weekend join us for drinks Friday, April 24, 2026 @7:30pm! <br></br>Casual Cocktail Attire.
+            </p>
+            <p>Please join us for welcome drinks at the Tipsy Goat - Front Patio </p>
+            <p></p>
+            <p>159 Thousand Oaks Blvd <br></br>
+            Thousand Oaks, CA, 91360
+            </p>
+            
+            <div className="second-map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3300.418150796995!2d-118.8767056!3d34.1794749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e83ab980333517%3A0x322fe4bc913fcbd2!2sThe%20Tipsy%20Goat!5e0!3m2!1sen!2sus!4v1694212345678!5m2!1sen!2sus" 
+              title="Google Maps location Tipsy Goat" 
+              allowFullScreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            </div>
            
           </div>
         </section>
@@ -249,7 +287,8 @@ const Body = () => {
               <img src="https://i.imgur.com/hvH7dFa.jpeg" 
               alt="Attire inspiration example"
               width="300"
-              height="300"></img>
+              height="300">
+              </img>
             </div>
              
             {/* https://i.imgur.com/F7H47ld.jpeg */}
@@ -272,7 +311,7 @@ const Body = () => {
             <h2> Are children allowed?</h2>
             <h3> While we adore your little ones, we've chosen to keep our celebration adults-only. Thank you for your understanding!</h3>
             <h2> Where will the wedding be?</h2>
-            <h3> Our ceremony and reception will be at the Westlake Village Inn. The ceremony will be held at the Inn's Tuscan Garden at 4:30pm, followed by a reception at the Fairway Room.  
+            <h3> Our ceremony and reception will be at the Westlake Village Inn. The ceremony will be held at the Inn's Tuscan Garden at 4:30pm, followed by a reception at the Fairway Room. <br></br>Vallet Parking Only  
             </h3>
             <a
                 className="address"
@@ -286,11 +325,11 @@ const Body = () => {
            <p className="address">
             31943 Agoura Rd, Westlake Village, CA 91361
             </p>
-            <div className="map-container">
+            <div id="map-section" className="map-container">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3740.4415625446145!2d-118.81779308827188!3d34.14872047300877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e82400adde2e2b%3A0x78672c8f8e8cc18b!2sWestlake%20Village%20Inn!5e1!3m2!1sen!2sus!4v1744655150186!5m2!1sen!2sus" 
               title="Google Maps location of Westlake Village Inn" 
-              allowFullScreen="" 
-              loading="lazy" 
+              allowFullScreen=""
+              loading="lazy"
               referrerpolicy="no-referrer-when-downgrade">
             </iframe>
 
