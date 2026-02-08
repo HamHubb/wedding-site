@@ -91,9 +91,9 @@ const Body = () => {
 
 
             <p>
-              If you're in town for the weekend join us for drinks<br></br> Friday, April 24, 2026 @7:30pm! <br></br>Casual Cocktail Attire.
+              If you're in town for the weekend join us for drinks at the Tipsy Goat - Front Patio<br></br> Friday, April 24, 2026 @7:30pm! <br></br>Casual Cocktail Attire.
             </p>
-            <p>Please join us for welcome drinks at the Tipsy Goat - Front Patio </p>
+            
             <p></p>
             <p>159 Thousand Oaks Blvd <br></br>
             Thousand Oaks, CA, 91360
