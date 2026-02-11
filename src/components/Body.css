@@ -105,6 +105,8 @@
   /* width: 100%; */
   height: 300px;
   width: 300px;
+  flex-direction: column;
+
   /* border: 1rem 0; */
 }
 /* Story Section Styling */
@@ -301,17 +303,9 @@
   } */
   
   /* For mobile responsiveness */
-  @media (max-width: 768px) {
-    .story-banner {
-      height: 200px;
-    }
-    .story-banner h2 {
-      font-size: 2rem;
-    }
-    .gallery-grid {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      }
-    }
+  /* @media (max-width: 768px) {
+   
+    } */
 
     .dressAtireImage {
       /* display: flex;
@@ -325,6 +319,12 @@
     .gallery-grid {
       grid-template-columns: 1fr;
     }
+    
+    .second-map-container iframe {
+    flex-direction: column;
+      width: 100%;
+
+  }
     
  }
  
@@ -557,6 +557,11 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+
+  .second-map-container iframe {
+    flex-direction: column;
+  }
+
   .accommodations-grid {
     flex-direction: column;
   }
@@ -568,5 +573,14 @@
   .accommodations-section {
     padding: 1rem;
   }
+  .story-banner {
+    height: 200px;
+  }
+  .story-banner h2 {
+    font-size: 2rem;
+  }
+  .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      }
 }
   

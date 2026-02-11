@@ -76,9 +76,9 @@ const Body = () => {
             <p>
               We're excited to annouce that we're getting married on <br></br>Saturday, April 25, 2026 at the Westlake Village Inn.
             </p>
-            <p>Wedding Timeline | 16:30 - 23:30 <br></br>
-                Ceremony | 16:30 at Tuscan Gardens <br></br>
-                Reception | 17:30 at Fairway Room
+            <p>Wedding Timeline | 4:30pm - 11:30pm <br></br>
+                Ceremony | 4:30pm at Tuscan Gardens <br></br>
+                Reception | 5:30pm at Fairway Room
             </p>
             <p>Spring Formal Attire - more information in our FAQ <br></br> 
                 Valet Parking Only
