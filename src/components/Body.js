@@ -76,6 +76,13 @@ const Body = () => {
             <p>
               We're excited to annouce that we're getting married on <br></br>Saturday, April 25, 2026 at the Westlake Village Inn.
             </p>
+            <p>Wedding Timeline | 16:30 - 23:30 <br></br>
+                Ceremony | 16:30 at Tuscan Gardens <br></br>
+                Reception | 17:30 at Fairway Room
+            </p>
+            <p>Spring Formal Attire - more information in our FAQ <br></br> 
+                Valet Parking Only
+            </p>
             <a href="/faq#map-section">
               <button type="button" className="Directional-button">
                   Directions to Wedding Venue
@@ -91,7 +98,7 @@ const Body = () => {
 
 
             <p>
-              If you're in town for the weekend, join us for drinks at the Tipsy Goat - Front Patio<br></br> Friday, April 24, 2026 @7:30pm! <br></br>Casual Cocktail Attire.
+              If you're in town for the weekend, <br></br>join us for drinks at the Tipsy Goat - Front Patio<br></br> Friday, April 24, 2026 @7:30pm! <br></br>Casual Cocktail Attire.
             </p>
             
             <p></p>
@@ -311,7 +318,7 @@ const Body = () => {
             <h2> Are children allowed?</h2>
             <h3> While we adore your little ones, we've chosen to keep our celebration adults-only. Thank you for your understanding!</h3>
             <h2> Where will the wedding be?</h2>
-            <h3> Our ceremony and reception will be at the Westlake Village Inn. The ceremony will be held at the Inn's Tuscan Garden at 4:30pm, followed by a reception at the Fairway Room. <br></br>Vallet Parking Only  
+            <h3> Our ceremony and reception will be at the Westlake Village Inn. The ceremony will be held at the Inn's Tuscan Garden at 4:30pm, followed by a reception at the Fairway Room. <br></br>Valet Parking Only  
             </h3>
             <a
                 className="address"
